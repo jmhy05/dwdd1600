@@ -120,13 +120,13 @@ main a:hover {
 footer {
     background-color: #f250a9;
     text-align: center;
-    color: #f250a9;
+    color: black;
     padding: 1rem 0;
     font-size: .8rem;
     
 }
 footer a {
-    color: #f250a9;
+    color: black;
 }
 
 
