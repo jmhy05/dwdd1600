@@ -1,0 +1,305 @@
+body {
+    font-family: "Outfit", sans-serfi;
+    font-size: 16px;
+    font-weight: 500px;
+    margin: 0;
+}
+
+/*Header*/
+
+header {
+    padding: 1rem 2vww;
+    border: 4px solid #02f3f7;
+    border-radius: 0.5rem;
+    display: flex;
+}
+
+header div {
+    padding-left: 2vw;
+    align-items: flex-end;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 90px;
+}
+
+header p {
+    margin: 0;
+    letter-spacing: 0.5px;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 800px){
+    nav ul {
+        margin: 0;
+        padding: 0 1.5vw;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .6rem;
+        text-decoration: none;
+        font-weight: 400;
+        text-transform: uppercase;
+        border-bottom: solid 1px #02f3f7;
+        color: black;
+    }
+    nav.active a {
+        background-color: #22c903;
+        background-image: repeating-linear-gradient(to top, #02f3f7, #22c903)
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    nav {
+        background-color: #02f3f7;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: flex;
+    }
+    nav a {
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+        display: block;
+        padding: 0.85rem  1rem;
+    }
+    nav li.active a {
+        background-color: #0000ff;
+        color: white;
+    }
+    nav a:hover {
+        color: white;
+    }
+}
+
+/*Main*/
+main {
+    padding: 1rem 2%;
+}
+main h1 {
+    color: #02f3f7;
+}
+main h2 {
+    margin-bottom: .2rem;
+    color: #02f3f7;
+    font-size: 30px;
+}
+main p {
+    margin: 0 0 .3rem 0;
+}
+main ol {
+    padding: .5rem 3%;
+}
+main dl dt {
+    color: green;
+    font-weight: 400;
+}
+main dl dd {
+    font-size: .9rem;
+}
+main ul {
+    list-style-type: circle;
+}
+main li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+main address {
+    font-style: normal;
+    background-color: #0000ff;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+}
+main a {
+    color: #0000ff;
+}
+main a:hover {
+    color: white;
+}
+
+/*Image Item here*/
+figure.europe {
+    width: 50%;
+    margin: 0 0 0 1.6;
+    float: left;
+}
+figure.europe img {
+    width: 100%;
+    height: auto;
+}
+figure.europe img:hover {
+    box-shadow: 15px 15px 0 black;
+}
+figure.europe figcaption {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 3rem;
+}
+
+figure.asia {
+    width: 50%;
+    margin: 0 0 0 1.6;
+    float: left;
+}
+figure.asia img {
+    width: 100%;
+    height: auto;
+}
+figure.asia img:hover {
+    box-shadow: 15px 15px 0 black;
+}
+figure.asia figcaption {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 3rem;
+}
+div.europe {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.europe figure {
+    margin: .5rem 2rem 0 0;
+}
+div.europe figcaption {
+    text-align: center;
+    font-size: 1rem;
+    color: #0000ff;
+    padding-top: 1rem;
+}
+.europe img:hover {
+    box-shadow: 15px 15px 0 black;
+}
+div.asia {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.asia figure {
+    margin: .5rem 2rem 0 0;
+}
+div.asia figcaption {
+    text-align: center;
+    font-size: 1rem;
+    color: #0000ff;
+    padding-top: 1rem;
+}
+.asia img:hover {
+    box-shadow: 15px 15px 0 black;
+}
+.travelme feildset {
+    border: solid 3px #02f3f7;
+    padding .3rem;
+}
+.travelme legend {
+    color: #02f3f7;
+    font-size: 2rem;
+}
+.travelme label {
+    margin: .5rem;
+}
+.travel [type=tel], .travel [type=email], .travelme[type=text] {
+    border: solid 4px #22c903;
+    padding: .3rem;
+    border-radius: .5rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.travelme textarea {
+    border: solid 4px #22c903;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+}
+.travelme label, .travelme [type=text], .travelme textarea, .travelme [type=tel], .travelme [type=email]{
+    display: block;
+    padding: 0.1rem;
+}
+.travelme select {
+    border: solid 4px #22c903;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+}
+.travelme: required {
+    background-color: rgba(156,51,53,0.1);
+}
+.travelme [type=submit] {
+    background-color: #22c903;
+    border: #02f3f7;
+    border-radius: 15px;
+    padding: 1vw 2vw;
+    color: black;   
+}
+table.package {
+    width:100%;
+    border-collapse: collapse;
+}
+
+table.package th {
+    background-color: #0000ff;
+    color: white;
+    padding: .5rem 2vw;
+}
+
+table.package td {
+    color: #02f3f7;
+    padding: .4rem 2vw;
+}
+
+table.package tr:nth-child(odd) {
+    background-color: #f7f7f7;
+    
+}
+
+table.our-activities tr:hover {
+    background-color: rgba(84,105,31,0.2);}
+
+table.trans {
+    width:100%;
+    border-collapse: collapse;
+}
+
+table.trans th {
+    background-color: #0000ff;
+    color: white;
+    padding: .5rem 2vw;
+}
+
+table.trans td {
+    color: #02f3f7;
+    padding: .4rem 2vw;
+}
+
+table.trans tr:nth-child(odd) {
+    background-color: #f7f7f7;
+    
+}
+/*Footer Stuff here*/
+footer {
+    background-color: #02f3f7;
+    text-align: center;
+    color: #02f3f7;
+    padding: 1rem 0;
+    font-size: .8rem;
+    
+}
+footer a {
+    color: #02f3f7;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
